@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>MDI Latam — secundario, trazo + relleno, loop</title>
+<style>
+  html,body{
+    margin:0; padding:0; height:100%;
+    background:#ffffff;
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+  svg{ width:220px; height:auto; overflow:visible; }
+  .caption{ margin-top:22px; font-size:12px; color:#8a8a90; text-align:center; max-width:500px; }
+  path{ stroke-linecap:round; stroke-linejoin:round; }
+</style>
+</head>
+<body>
+
+<svg id="logo" viewBox="0 0 503.44 361.08" xmlns="http://www.w3.org/2000/svg">
+  <g id="all">
+    <!-- M -->
+    <path class="p" data-color="#0f122d" data-start="0" data-drawdur="800" data-filldur="300"
+      d="M180.41,193.91V58.54c0-2.02-2.84-2.47-3.46-.54l-43.99,136.46c-.24.73-.92,1.23-1.69,1.23h-36.89c-.77,0-1.46-.5-1.69-1.24L49.57,58.21c-.61-1.93-3.46-1.49-3.46.53v135.17c0,.98-.79,1.77-1.77,1.77H1.77c-.98,0-1.77-.79-1.77-1.77V2.07C0,1.09.79.29,1.77.29h65.8c.78,0,1.46.51,1.69,1.25l42.59,137.39c.52,1.66,2.87,1.66,3.39,0L157.83,1.54c.23-.74.92-1.25,1.69-1.25h65.51c.98,0,1.77.79,1.77,1.77v191.85c0,.98-.79,1.77-1.77,1.77h-42.85c-.98,0-1.77-.79-1.77-1.77Z"/>
+
+    <!-- D -->
+    <path class="p" data-color="#0f122d" data-start="500" data-drawdur="800" data-filldur="300"
+      d="M254.52,193.91V2.07c0-.98.79-1.77,1.77-1.77h71.43c65.42,0,104.04,40.35,104.04,96.26s-38.62,99.14-102.88,99.14h-72.58c-.98,0-1.77-.79-1.77-1.77ZM327.72,157.93c37.75,0,57.06-27.09,57.06-61.38s-19.89-59.94-58.21-59.94h-25.03c-.98,0-1.77.79-1.77,1.77v117.78c0,.98.79,1.77,1.77,1.77h26.18Z"/>
+
+    <!-- I: palo -->
+    <path class="p" data-color="#0f122d" data-start="1000" data-drawdur="500" data-filldur="250"
+      d="M457.53,195.85h44.91c.55,0,1-.42,1-.94V59c0-.52-.45-.94-1-.94h-44.91c-.55,0-1,.42-1,.94v135.91c0,.52.45.94,1,.94Z"/>
+
+    <!-- I: gesto/punto -->
+    <path class="p" data-color="#0f122d" data-start="1300" data-drawdur="350" data-filldur="200"
+      d="M503.44.94h0c0-.52-.45-.94-1-.94h-44.91c-.55,0-1,.42-1,.94v42.12c0,.52.45.94,1,.94h0c25.35,0,45.91-19.28,45.91-43.06Z"/>
+
+    <!-- l -->
+    <path class="p" data-color="#9187f7" data-start="1750" data-drawdur="600" data-filldur="300"
+      d="M12.93,356.38c4.6,2.06,10.74,3.11,18.23,3.11h9.39v-19.79h-8.03c-2.87,0-5.14-.83-6.74-2.46-1.59-1.62-2.4-3.91-2.4-6.81v-113.29H.12v112.89c0,7.09,1.05,12.86,3.12,17.14,2.02,4.19,5.19,7.2,9.69,9.21Z"/>
+
+    <!-- a (1ra) -->
+    <path class="p" data-color="#9187f7" data-start="1850" data-drawdur="900" data-filldur="300"
+      d="M51.01,328.24c0,6.89,1.51,12.84,4.49,17.66,2.98,4.83,7.21,8.6,12.57,11.2,5.43,2.64,11.9,3.98,19.25,3.98s13.09-1.3,17.93-3.85c4.78-2.53,8.22-6.48,11.32-11.07,5.77-8.55,7.79-21.01,6.81-19.64v31.78h17.81v-64.82c0-9.67-1.78-17.6-5.29-23.56-3.47-5.89-8.67-10.26-15.45-13-6.96-2.81-15.87-4.23-26.49-4.23-3.46,0-7.26.03-11.28.1-3.99.07-7.86.23-11.5.49-2.99.21-5.74.43-8.26.64v19.62c3.15-.21,6.63-.4,10.38-.56,4.57-.2,9.21-.37,13.78-.5,4.74-.13,8.58-.2,11.76-.2,6.62,0,11.68,1.77,15.04,5.26,3.33,3.47,5.02,8.56,5.02,15.14v2.92h-23.38c-9.09,0-17.15,1.23-23.93,3.66-6.63,2.38-11.78,5.96-15.3,10.67-3.5,4.67-5.27,10.83-5.27,18.31ZM79.48,313.52c3.67-3.37,8.93-5.08,15.64-5.08h23.77v11.85c-.28,6.21-1.55,11.17-3.8,14.82-2.28,3.7-5.23,6.36-8.77,7.9-3.42,1.49-7.19,2.25-11.21,2.25-6.71,0-11.97-1.71-15.64-5.07-3.71-3.41-5.6-7.9-5.6-13.34s1.88-9.92,5.6-13.33Z"/>
+
+    <!-- t -->
+    <path class="p" data-color="#9187f7" data-start="1950" data-drawdur="700" data-filldur="300"
+      d="M174.91,352.31c5.84,5.82,13.98,8.78,24.2,8.78s18.3-2.99,23.42-8.87c4.86-5.59,7.48-13.13,7.79-22.44h-16.29c-.29,3.94-1.49,7.04-3.58,9.24-2.45,2.57-5.67,3.87-9.58,3.87s-6.96-1.3-9.47-3.85c-2.5-2.55-3.77-6.31-3.77-11.18v-57.14h38.82v-16.42h-38.82v-31.19h-21.51v31.19h-16.58v16.42h16.58v56.35c0,10.94,2.96,19.44,8.8,25.26Z"/>
+
+    <!-- a (2da) -->
+    <path class="p" data-color="#9187f7" data-start="2050" data-drawdur="900" data-filldur="300"
+      d="M239.74,328.24c0,6.89,1.51,12.84,4.49,17.66,2.98,4.83,7.21,8.6,12.57,11.2,5.43,2.64,11.9,3.98,19.25,3.98s13.09-1.3,17.93-3.85c4.78-2.53,8.22-6.48,11.32-11.07,5.77-8.55,7.79-21.01,6.81-19.64v31.78h17.81v-64.82c0-9.67-1.78-17.6-5.29-23.56-3.47-5.89-8.67-10.26-15.45-13-6.96-2.81-15.87-4.23-26.49-4.23-3.46,0-7.26.03-11.28.1-3.99.07-7.86.23-11.5.49-2.99.21-5.74.43-8.26.64v19.62c3.15-.21,6.63-.4,10.38-.56,4.57-.2,9.21-.37,13.78-.5,4.74-.13,8.58-.2,11.76-.2,6.62,0,11.68,1.77,15.04,5.26,3.33,3.47,5.02,8.56,5.02,15.14v2.92h-23.38c-9.09,0-17.15,1.23-23.93,3.66-6.63,2.38-11.78,5.96-15.3,10.67-3.5,4.67-5.27,10.83-5.27,18.31ZM268.22,313.52c3.67-3.37,8.93-5.08,15.64-5.08h23.77v11.85c-.28,6.21-1.55,11.17-3.8,14.82-2.28,3.7-5.23,6.36-8.77,7.9-3.42,1.49-7.19,2.25-11.21,2.25-6.71,0-11.97-1.71-15.64-5.07-3.71-3.41-5.6-7.9-5.6-13.34s1.88-9.92,5.6-13.33Z"/>
+
+    <!-- m -->
+    <path class="p" data-color="#9187f7" data-start="2150" data-drawdur="1000" data-filldur="300"
+      d="M458.74,271.89c6.67,0,11.99,2.26,15.8,6.73,3.73,4.39,5.63,10.32,5.63,17.64v62.04h23.27v-59.66c0-10.57-1.37-19.53-4.07-26.63-2.65-6.95-6.58-12.26-11.69-15.79-5.11-3.53-11.63-5.32-19.39-5.32h-1.16c-7.62,0-14.05,1.79-19.1,5.32-5.05,3.53-8.95,8.85-11.59,15.79-.14.38-.26.79-.38,1.19-.09.32-.19.64-.29.95l-1.87,5.68-1.79-5.71c-.1-.31-.19-.63-.28-.95-.11-.41-.23-.82-.36-1.2-2.52-6.94-6.35-12.24-11.39-15.77-5.05-3.53-11.53-5.32-19.28-5.32h-1.17c-7.63,0-14.05,1.79-19.09,5.31-5.04,3.53-8.64,8.94-11.49,15.78-4.46,10.72-5.87,20.08-5.87,20.08v-37.8h-17.61v104.02h23.27v-61.25c0-6.71,3.2-15.05,6.15-18.27,4.16-4.54,9.67-6.89,16.45-6.89s11.99,2.26,15.8,6.73c3.73,4.38,5.63,10.31,5.63,17.64v62.04h23.28v-61.25c0-7.62,2.07-13.77,6.15-18.28,4.13-4.57,9.67-6.89,16.45-6.89Z"/>
+  </g>
+</svg>
+
+<p class="caption">
+  v6 — logo secundario, tamaño chico, mismo mecanismo: cada letra se dibuja por su contorno y recién al
+  terminar se rellena. Fade final y loop, igual que la v4 que armamos, solo con la geometría apilada.
+</p>
+
+<script>
+const HOLD = 1300;
+const FADEOUT = 500;
+const paths = Array.from(document.querySelectorAll('.p')).map(el => {
+  const len = el.getTotalLength();
+  el.style.fill = 'none';
+  el.style.stroke = el.dataset.color;
+  el.style.strokeWidth = '3';
+  el.style.strokeDasharray = len;
+  return {
+    el, len,
+    start: parseFloat(el.dataset.start),
+    drawDur: parseFloat(el.dataset.drawdur),
+    fillDur: parseFloat(el.dataset.filldur),
+    color: el.dataset.color
+  };
+});
+
+const lastEnd = Math.max(...paths.map(p => p.start + p.drawDur + p.fillDur));
+const CYCLE = lastEnd + HOLD + FADEOUT + 300;
+const allGroup = document.getElementById('all');
+
+function clamp01(x){ return Math.max(0, Math.min(1, x)); }
+function ease(t){ return t<0.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2; }
+
+function frame(now){
+  const t = now % CYCLE;
+  paths.forEach(p => {
+    const drawT = clamp01((t - p.start) / p.drawDur);
+    const drawEase = ease(drawT);
+    p.el.style.strokeDashoffset = p.len * (1 - drawEase);
+    const fillStart = p.start + p.drawDur;
+    const fillT = clamp01((t - fillStart) / p.fillDur);
+    p.el.style.fill = p.color;
+    p.el.style.fillOpacity = fillT;
+    p.el.style.strokeOpacity = 1 - fillT;
+  });
+  const fadeStart = lastEnd + HOLD;
+  const fadeT = clamp01((t - fadeStart) / FADEOUT);
+  allGroup.style.opacity = 1 - fadeT;
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+
+</body>
+</html>
